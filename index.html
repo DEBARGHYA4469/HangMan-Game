@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" type="text/javascript"></script>
+
+<title>Simple Hangman</title>
+
+</head>
+
+<body onLoad="reset(); return true;">
+
+<center>
+<h2>Simple Hangman</h2>
+
+<p>
+	<img src="hmstart.gif" height="125" width="75" name="hm">
+</p>
+
+<form name="game">
+	<p style="font-weight:bold; font-size:18px;">
+		Display Word: &nbsp;&nbsp;&nbsp;<input type="text" id="form1" name="displayWord" disabled />
+		<br />
+		<br />
+		Used Letters: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="form2" name="usedLetters" disabled />
+	</p>
+</form>
+
+<p style="font-weight:bold; font-size:18px;">
+
+<label>Choose a letter:</label>
+
+<br />
+<br />
+
+
+<input type="button" id="Q" value="Q" onClick=selectLetter("Q")>
+<input type="button" id="W" value="W" onClick=selectLetter("W")>
+<input type="button" id="E" value="E" onClick=selectLetter("E")>
+<input type="button" id="R" value="R" onClick=selectLetter("R")>
+<input type="button" id="T" value="T" onClick=selectLetter("T")>
+<input type="button" id="Y" value="Y" onClick=selectLetter("Y")>
+<input type="button" id="U" value="U" onClick=selectLetter("U")> 
+<input type="button" id="I" value="I" onClick=selectLetter("I")>
+<input type="button" id="O" value="O" onClick=selectLetter("O")>
+<input type="button" id="P" value="P" onClick=selectLetter("P")>
+
+<br/>
+<br/>
+
+<input type="button" id="A" value="A" onClick=selectLetter("A")>
+<input type="button" id="S" value="S" onClick=selectLetter("S")>
+<input type="button" id="D" value="D" onClick=selectLetter("D")>
+<input type="button" id="F" value="F" onClick=selectLetter("F")>
+<input type="button" id="G" value="G" onClick=selectLetter("G")>
+<input type="button" id="H" value="H" onClick=selectLetter("H")>
+<input type="button" id="J" value="J" onClick=selectLetter("J")>
+<input type="button" id="K" value="K" onClick=selectLetter("K")>
+<input type="button" id="L" value="L" onClick=selectLetter("L")>
+
+<br/>
+<br/>
+
+<input type="button" id="Z" value="Z" onClick=selectLetter("Z")>
+<input type="button" id="X" value="X" onClick=selectLetter("X")>
+<input type="button" id="C" value="C" onClick=selectLetter("C")>
+<input type="button" id="V" value="V" onClick=selectLetter("V")>
+<input type="button" id="B" value="B" onClick=selectLetter("B")>
+<input type="button" id="N" value="N" onClick=selectLetter("N")>
+<input type="button" id="M" value="M" onClick=selectLetter("M")>
+
+</p>
+
+<br />
+
+<p>
+<a href="javascript:reset()"><input type="button" style="cursor:pointer; margin-left: 10px; font-size:18px;" value="Start game / Reset game"></a>
+</p>
+</center>
+
+</body>
+</html>
+
